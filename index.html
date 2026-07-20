@@ -629,8 +629,11 @@
                 
                 <div id="scratchLocalPopup">
                     <div class="wizard-container">
-                        <button class="scratch-close-btn" onclick="exitScratchMission()">THOÁT</button>
-                        <div class="energy-station">
+                        <div class="scratch-popup-header" style="display: flex; justify-content: space-between; align-items: center; width: 100%; flex-shrink: 0; margin-bottom: 8px; box-sizing: border-box;">
+                            <span class="scratch-header-title">NHIỆM VỤ 1: KHỞI ĐỘNG PHI THUYỀN</span>
+                            <button class="scratch-close-btn" onclick="exitScratchMission()" style="position: static;">THOÁT</button>
+                        </div>
+                        <div class="energy-station" style="margin-top: 0;">
                             <div class="energy-text"><span class="status-blink">●</span> NHIÊN LIỆU PHI THUYỀN: <span class="percent-glowing"><span id="energyPercent">15</span>%</span></div>
                             <div class="energy-bar-bg">
                                 <div id="energyFill" class="energy-fill"></div>
@@ -682,7 +685,7 @@
                 <div id="theoryLocalPopup">
                     <div id="cosmicStation" style="display: flex; flex-direction: column; height: 100%; box-sizing: border-box; justify-content: space-between;">
                         <div class="kahoot-header" style="flex-shrink: 0; margin-bottom: 12px;">
-                            <h2 class="kahoot-title">HÀNH TINH LÝ THUYẾT</h2>
+                            <span class="kahoot-title">NHIỆM VỤ 3: THỬ THÁCH LÝ THUYẾT</span>
                             <button class="back-btn-space" onclick="closeLocalTheory()">THOÁT</button>
                         </div>
                         <div class="kahoot-container" style="flex-grow: 1; width: 100%; height: 100%; background: #000; border-radius: 16px; overflow: hidden; border: 2px solid #ffde59; position: relative; margin-bottom: 12px; box-sizing: border-box;">
