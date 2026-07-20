@@ -25,8 +25,9 @@
 .roadmap-item {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.15);
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
     border-radius: 15px;
     padding: 10px 14px;
     margin-bottom: 10px;
@@ -39,10 +40,10 @@
     cursor: pointer;
 }
 .roadmap-item.locked {
-    background: rgba(0, 0, 0, 0.4);
-    border: 2px dashed rgba(255, 255, 255, 0.2);
+    background: rgba(13, 20, 38, 0.5);
+    border: 1px dashed rgba(255, 255, 255, 0.15);
     cursor: not-allowed;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .item-icon {
@@ -60,8 +61,8 @@
 .roadmap-item.locked .item-icon { background: #475569; color: #94a3b8; }
 .item-info h4 { margin: 0; color: #fff; font-size: 15px; }
 .roadmap-item.active .item-info h4 { color: #1e293b; }
-.item-info p { margin: 0; font-size: 11px; color: #cbd5e1; font-family: sans-serif; }
-.roadmap-item.active .item-info p { color: #334155; font-weight: bold; }
+.item-info p { margin: 0; font-size: 11px; color: #cbd5e1; font-family: 'Nunito', sans-serif; }
+.roadmap-item.active .item-info p { color: #334155; font-family: 'Nunito', sans-serif; font-weight: bold; }
 
 .active-tag {
     background: #fff; color: #ea580c; padding: 3px 8px; border-radius: 12px; font-weight: bold; font-size: 9px; animation: pulse-tag 1.5s infinite; margin-left: auto;
@@ -87,7 +88,7 @@
 .steps-scroll-box::-webkit-scrollbar-thumb { background: #ffde59; border-radius: 10px; }
 
 .btn-back-to-map {
-    background: #475569; color: white; border: 2px solid #64748b; padding: 6px 12px; border-radius: 12px; font-family: 'Gluten', cursive; font-size: 11px; cursor: pointer; margin-bottom: 5px;
+    background: #475569; color: white; border: 2px solid #64748b; padding: 6px 12px; border-radius: 12px; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 11px; cursor: pointer; margin-bottom: 5px;
 }
 
 .mission-header-title { text-align: center; color: #ffde59; font-size: 18px; margin: 0 0 10px 0; }
@@ -95,8 +96,9 @@
 .kids-step-card {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.12);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
     border-radius: 14px;
     padding: 10px 14px;
     margin-bottom: 8px;
@@ -104,7 +106,7 @@
     box-sizing: border-box;
 }
 .kids-step-card.is-locked { opacity: 0.35; filter: grayscale(90%); pointer-events: none; }
-.kids-step-card.is-completed { border: 2px solid #22c55e; background: rgba(34, 197, 94, 0.15); }
+.kids-step-card.is-completed { border: 1px solid rgba(34, 197, 94, 0.4); background: rgba(34, 197, 94, 0.15); }
 
 .kids-step-badge {
     position: absolute; top: -6px; left: -6px; width: 20px; height: 20px; background: #fff; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 10px;
@@ -112,9 +114,9 @@
 .kids-step-icon { font-size: 24px; margin-right: 10px; }
 .kids-step-text { flex-grow: 1; }
 .kids-step-text h5 { margin: 0; font-size: 14px; color: #fff; }
-.kids-step-text p { margin: 0; font-size: 11px; color: #e2e8f0; font-family: sans-serif; }
+.kids-step-text p { margin: 0; font-size: 11px; color: #e2e8f0; font-family: 'Nunito', sans-serif; }
 .kids-step-btn {
-    padding: 6px 14px; border-radius: 15px; font-weight: bold; font-size: 11px; color: white !important; border: 2px solid #fff; cursor: pointer; font-family: 'Gluten', cursive;
+    padding: 6px 14px; border-radius: 15px; font-weight: bold; font-size: 11px; color: white !important; border: 2px solid #fff; cursor: pointer; font-family: 'Nunito', sans-serif; font-weight: 800;
 }
 
 .step-orange { border-left: 5px solid #f97316; }

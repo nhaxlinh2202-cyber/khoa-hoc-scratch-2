@@ -7,10 +7,10 @@
     right: 4%;
     width: 63%;
     height: 65%;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(13, 20, 38, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
     color: white;
     overflow: hidden;
@@ -44,11 +44,8 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background: rgba(20, 27, 45, 0.7);
+    background: transparent;
     border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255,255,255,0.2);
 }
 
 .course-info-container::-webkit-scrollbar {
@@ -62,8 +59,9 @@
 .welcome-banner {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.07);
     border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
     border-radius: 16px;
     padding: 15px 20px;
     gap: 20px;
@@ -112,8 +110,9 @@
 
 .info-card {
     flex: 1;
-    background: rgba(15, 23, 42, 0.8);
-    border: 2px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
     border-radius: 16px;
     padding: 18px;
     box-sizing: border-box;
@@ -160,7 +159,7 @@
 
 .card-body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 13.5px;
     line-height: 1.55;
     color: #e2e8f0;
@@ -200,7 +199,7 @@
 }
 
 .value-text {
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 12.5px;
     line-height: 1.4;
     color: #cbd5e1;
@@ -241,7 +240,7 @@
 }
 .gradebook-kids-header p {
     margin: 2px 0 0 0;
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 11px;
     color: #94a3b8;
 }
@@ -249,8 +248,9 @@
 .gradebook-kids-card {
     width: 100%;
     max-width: 460px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.03) 100%);
-    border: 2px solid rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
     border-radius: 16px;
     display: flex;
     padding: 12px 16px;
@@ -289,7 +289,7 @@
     border-radius: 20px;
     font-size: 10px;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 .info-waiting { background: rgba(148,163,184,0.15); border: 1px solid #94a3b8; color: #cbd5e1; }
 .info-success { background: rgba(34,197,94,0.2); border: 1px solid #22c55e; color: #4ade80; }
@@ -320,13 +320,15 @@
 .score-max-cap {
     font-size: 9px;
     color: #94a3b8;
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .gradebook-kids-footer {
     width: 100%;
     max-width: 460px;
-    background: rgba(30, 41, 59, 0.5);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
     border-radius: 10px;
     padding: 6px 12px;
     box-sizing: border-box;
@@ -335,7 +337,7 @@
 }
 .gradebook-kids-footer p {
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 11px;
     color: #cbd5e1;
     line-height: 1.4;
