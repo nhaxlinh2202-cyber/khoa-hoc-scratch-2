@@ -122,8 +122,9 @@
 
 .fullscreen-btn {
     position: absolute; 
-    top: 3%; 
-    left: 3%; 
+    top: 14%; 
+    left: 15.5%; 
+    transform: translateX(-50%);
     z-index: 999; 
     background: #ef4444; 
     color: white; 
@@ -137,7 +138,7 @@
 }
 
 .fullscreen-btn:hover {
-    transform: scale(1.05);
+    transform: translateX(-50%) scale(1.05);
     background: #dc2626;
 }
 
