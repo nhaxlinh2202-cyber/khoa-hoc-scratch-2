@@ -373,16 +373,17 @@
 }
 
 .back-btn-space {
-    background: linear-gradient(135deg, #1eaf1e, #34bb28);
-    color: white;
-    border: 2px solid #fff;
-    padding: 6px 14px;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 13px;
-    box-shadow: 0 3px 0 #1c7436;
+    background: #ef4444; 
+    color: white !important; 
+    border: 2px solid #fff; 
+    padding: 4px 12px; 
+    border-radius: 12px; 
+    cursor: pointer; 
+    font-size: 11px; 
+    font-weight: 800;
+    box-shadow: 0 3px 0 #b91c1c;
     transition: 0.1s;
-    font-family: 'Gluten', cursive;
+    font-family: 'Nunito', sans-serif;
 }
 .back-btn-space:active {
     transform: translateY(3px);
