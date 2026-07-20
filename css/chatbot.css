@@ -71,16 +71,17 @@
 ========================================================= */
 .ai-chat-frame {
     position: absolute;
-    bottom: 100px;
+    bottom: 85px;
     right: 0px;
-    width: 360px;
-    height: 520px;
+    width: 350px;
+    height: 450px;
     background: rgba(255, 255, 255, 0.95) !important;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     border: 3px solid #ffde59;
     display: none;
     animation: popUp 0.3s ease-out;
+    box-sizing: border-box !important;
 }
 
 .ai-chat-frame:fullscreen {
