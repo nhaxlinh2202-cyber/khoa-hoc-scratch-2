@@ -13,8 +13,6 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     background-image: url('cosmic_space_background.png');
     background-size: cover;
     background-position: center;
