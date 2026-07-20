@@ -122,24 +122,31 @@
 
 .fullscreen-btn {
     position: absolute; 
-    top: 14%; 
+    top: 9.5%; 
     left: 15.5%; 
     transform: translateX(-50%);
     z-index: 999; 
-    background: #ef4444; 
+    background: linear-gradient(to bottom, #ff6b6b 0%, #e81a1a 100%);
     color: white; 
     border: 2px solid #fff; 
-    padding: 5px 12px; 
+    padding: 4px 12px; 
     border-radius: 15px; 
     cursor: pointer; 
     font-family: 'Gluten', cursive; 
-    font-size: 11px;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    font-size: 10px;
+    font-weight: 700;
+    box-shadow: 0 4px 0 #b31010, 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s ease, background 0.1s ease;
 }
 
 .fullscreen-btn:hover {
     transform: translateX(-50%) scale(1.05);
-    background: #dc2626;
+    background: linear-gradient(to bottom, #ff7b7b 0%, #f92a2a 100%);
+}
+
+.fullscreen-btn:active {
+    transform: translateX(-50%) translateY(2px);
+    box-shadow: 0 2px 0 #b31010, 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 input.tab-controller {
@@ -164,10 +171,11 @@ input.tab-controller {
     transform: scale(1.08);
 }
 
-.btn-1 { top: 29%; left: 9%; }
-.btn-2 { top: 39%; left: 9%; }
-.btn-3 { top: 49%; left: 9%; }
-.btn-4 { top: 59%; left: 9%; }
+ /* Cụ thể tọa độ các nút bấm trên tên lửa */
+.btn-1 { top: 24%; left: 9%; }
+.btn-2 { top: 33%; left: 9%; }
+.btn-3 { top: 42%; left: 9%; }
+.btn-4 { top: 51%; left: 9%; }
 
 @keyframes fadeIn {
     from { opacity: 0; }
