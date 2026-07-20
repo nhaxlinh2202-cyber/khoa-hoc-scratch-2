@@ -1,0 +1,10 @@
+/*
+ * Space Course Academy stylesheet loader.
+ * All stylesheets are split into modular files inside the /css folder.
+ */
+
+@import url('css/main.css');
+@import url('css/panels.css');
+@import url('css/missions.css');
+@import url('css/popups.css');
+@import url('css/chatbot.css');

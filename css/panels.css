@@ -1,0 +1,380 @@
+/* ==========================================================
+       GLASS BOX & CONTENT PANELS LAYOUT
+============================================================ */
+.glass-content-box {
+    position: absolute;
+    top: 22%;
+    right: 4%;
+    width: 63%;
+    height: 65%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 20;
+}
+
+.content-panel {
+    display: none;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    animation: fadeIn 0.5s ease;
+}
+
+#tab-1:checked ~ .glass-content-box .panel-1,
+#tab-2:checked ~ .glass-content-box .panel-2,
+#tab-3:checked ~ .glass-content-box .panel-3,
+#tab-4:checked ~ .glass-content-box .panel-4 {
+    display: block;
+}
+
+/* ==========================================
+       PANEL 1: THÔNG TIN KHÓA HỌC (COSMIC STYLE)
+=========================================== */
+.course-info-container {
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.course-info-container::-webkit-scrollbar {
+    width: 6px;
+}
+.course-info-container::-webkit-scrollbar-thumb {
+    background: #ffde59;
+    border-radius: 10px;
+}
+
+.welcome-banner {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 15px 20px;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.banner-avatar {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+}
+.banner-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.banner-text {
+    flex-grow: 1;
+}
+
+.panel-heading {
+    font-size: 22px; 
+    color: #ffde59;
+    margin: 0 0 6px 0;
+    font-family: 'Gluten', cursive;
+    font-weight: 700;
+}
+
+.welcome-text {
+    font-family: sans-serif;
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: #f8fafc;
+    margin: 0;
+}
+
+.info-grid {
+    display: flex;
+    gap: 15px;
+}
+
+.info-card {
+    flex: 1;
+    background: rgba(15, 23, 42, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 18px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 222, 89, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-icon {
+    font-size: 24px;
+}
+
+.card-header h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #ffde59;
+    font-family: 'Gluten', cursive;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.card-body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: #e2e8f0;
+}
+
+.values-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.value-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.value-badge {
+    align-self: flex-start;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.badge-orange {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+}
+.badge-blue {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+.badge-green {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.value-text {
+    font-family: sans-serif;
+    font-size: 12.5px;
+    line-height: 1.4;
+    color: #cbd5e1;
+    padding-left: 5px;
+}
+
+/* ==========================================================
+       PANEL 3: GIAO DIỆN SỔ ĐIỂM HOÀN TOÀN MỚI THÂN THIỆN TRẺ EM
+============================================================ */
+.panel-3 {
+    padding: 15px;
+    box-sizing: border-box;
+}
+.gradebook-kids-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gradebook-kids-header {
+    text-align: center;
+    flex-shrink: 0;
+}
+.gradebook-badge-avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 2px;
+}
+.gradebook-kids-header h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #ffde59;
+}
+.gradebook-kids-header p {
+    margin: 2px 0 0 0;
+    font-family: sans-serif;
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+.gradebook-kids-card {
+    width: 100%;
+    max-width: 460px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.03) 100%);
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 16px;
+    display: flex;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    margin: 8px 0;
+}
+.kids-card-accent {
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    width: 6px;
+    background: linear-gradient(180deg, #ffde59, #f97316);
+}
+.kids-card-main-info {
+    flex-grow: 1;
+    padding-right: 10px;
+}
+.kids-task-label {
+    font-size: 10px;
+    color: #ffde59;
+    letter-spacing: 0.5px;
+    display: block;
+}
+.kids-task-name {
+    margin: 3px 0 6px 0;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.3;
+}
+
+.kids-status-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.info-waiting { background: rgba(148,163,184,0.15); border: 1px solid #94a3b8; color: #cbd5e1; }
+.info-success { background: rgba(34,197,94,0.2); border: 1px solid #22c55e; color: #4ade80; }
+.info-warning { background: rgba(234,179,8,0.2); border: 1px solid #eab308; color: #facc15; }
+
+.kids-card-score-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: rgba(0,0,0,0.2);
+    border-radius: 12px;
+    padding: 8px;
+    min-width: 80px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.star-deco { font-size: 16px; color: #ffde59; animation: spin-star 4s infinite linear; }
+
+.kids-grade-num {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffde59;
+    line-height: 1;
+    margin: 2px 0;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.score-max-cap {
+    font-size: 9px;
+    color: #94a3b8;
+    font-family: sans-serif;
+}
+
+.gradebook-kids-footer {
+    width: 100%;
+    max-width: 460px;
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 10px;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    text-align: center;
+    flex-shrink: 0;
+}
+.gradebook-kids-footer p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 11px;
+    color: #cbd5e1;
+    line-height: 1.4;
+}
+
+/* ==========================================================
+       PANEL 4: DIỄN ĐÀN THẢO LUẬN (PADLET)
+============================================================ */
+.forum-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.btn-expand-padlet {
+    position: absolute;
+    top: 150px;
+    right: 15px;
+    background: linear-gradient(135deg, #ffde59, #ffb84d);
+    color: #1e293b !important;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-family: 'Gluten', cursive;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid #f59e0b;
+    box-shadow: 0 4px 0px #d97706;
+    z-index: 50;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-expand-padlet:hover {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0px #d97706;
+    color: #0f172a !important;
+}
+
+.panel-4:fullscreen {
+    width: 100% !important;
+    height: 100% !important;
+    background: #0f172a !important;
+    padding: 0 !important;
+    display: block !important;
+}
+
+.panel-4:fullscreen .btn-expand-padlet {
+    top: 20px !important;
+    left: 20px !important;
+    right: auto !important;
+    padding: 10px 24px !important;
+    font-size: 16px !important;
+}
+
+/* Common utilities */
+.fill-width-btn { width: 100% !important; }

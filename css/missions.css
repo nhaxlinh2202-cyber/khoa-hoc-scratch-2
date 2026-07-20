@@ -1,0 +1,127 @@
+/* ==========================================================
+       PANEL 2 LAYOUT & ROADMAP CONTAINER
+============================================================ */
+.panel-2 {
+    padding: 10px 15px; 
+    overflow: hidden; 
+    position: relative;
+}
+
+.roadmap-container {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+.roadmap-container::-webkit-scrollbar { width: 6px; }
+.roadmap-container::-webkit-scrollbar-thumb { background: #ffde59; border-radius: 10px; }
+
+.roadmap-title {
+    text-align: center;
+    color: #ffde59;
+    margin: 12px 0 10px 0;
+    font-size: 20px;
+}
+
+.roadmap-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.roadmap-item.active {
+    background: linear-gradient(135deg, #ffde59, #ffb84d);
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.roadmap-item.locked {
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.item-icon {
+    font-size: 22px;
+    margin-right: 12px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.roadmap-item.locked .item-icon { background: #475569; color: #94a3b8; }
+.item-info h4 { margin: 0; color: #fff; font-size: 15px; }
+.roadmap-item.active .item-info h4 { color: #1e293b; }
+.item-info p { margin: 0; font-size: 11px; color: #cbd5e1; font-family: sans-serif; }
+.roadmap-item.active .item-info p { color: #334155; font-weight: bold; }
+
+.active-tag {
+    background: #fff; color: #ea580c; padding: 3px 8px; border-radius: 12px; font-weight: bold; font-size: 9px; animation: pulse-tag 1.5s infinite; margin-left: auto;
+}
+
+@keyframes pulse-tag {
+    0% { transform: scale(1); }
+    70% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* ==========================================================
+       LESSON STEPS SCROLLBOX (NHẬT KÝ NHIỆM VỤ)
+============================================================ */
+.steps-scroll-box {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 5px;
+    padding-left: 10px;
+    padding-top: 8px;
+}
+.steps-scroll-box::-webkit-scrollbar { width: 5px; }
+.steps-scroll-box::-webkit-scrollbar-thumb { background: #ffde59; border-radius: 10px; }
+
+.btn-back-to-map {
+    background: #475569; color: white; border: 2px solid #64748b; padding: 6px 12px; border-radius: 12px; font-family: 'Gluten', cursive; font-size: 11px; cursor: pointer; margin-bottom: 5px;
+}
+
+.mission-header-title { text-align: center; color: #ffde59; font-size: 18px; margin: 0 0 10px 0; }
+
+.kids-step-card {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.12);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    position: relative;
+    box-sizing: border-box;
+}
+.kids-step-card.is-locked { opacity: 0.35; filter: grayscale(90%); pointer-events: none; }
+.kids-step-card.is-completed { border: 2px solid #22c55e; background: rgba(34, 197, 94, 0.15); }
+
+.kids-step-badge {
+    position: absolute; top: -6px; left: -6px; width: 20px; height: 20px; background: #fff; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 10px;
+}
+.kids-step-icon { font-size: 24px; margin-right: 10px; }
+.kids-step-text { flex-grow: 1; }
+.kids-step-text h5 { margin: 0; font-size: 14px; color: #fff; }
+.kids-step-text p { margin: 0; font-size: 11px; color: #e2e8f0; font-family: sans-serif; }
+.kids-step-btn {
+    padding: 6px 14px; border-radius: 15px; font-weight: bold; font-size: 11px; color: white !important; border: 2px solid #fff; cursor: pointer; font-family: 'Gluten', cursive;
+}
+
+.step-orange { border-left: 5px solid #f97316; }
+.btn-orange { background: linear-gradient(135deg, #f97316, #ea580c); }
+.step-blue { border-left: 5px solid #3b82f6; }
+.btn-blue { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+.step-purple { border-left: 5px solid #a855f7; }
+.btn-purple { background: linear-gradient(135deg, #a855f7, #9333ea); }
+.step-green { border-left: 5px solid #22c55e; }
+.btn-green { background: linear-gradient(135deg, #22c55e, #16a34a); }

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap');
+
+/* ==========================================
+       0. THIẾT LẬP NỀN KHÔNG GIAN TOÀN TRANG (FULL PAGE SPACE BACKGROUND)
+=========================================== */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #080a15;
+    background-image: radial-gradient(circle at center, #15182e 0%, #080a15 100%);
+    background-attachment: fixed;
+}
+
+/* ==========================================
+       1. GIAO DIỆN TÀU VŨ TRỤ CHÍNH
+=========================================== */
+.space-course-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    aspect-ratio: 16 / 9;
+    margin: 20px auto;
+    background-image: url('https://i.postimg.cc/BZPGssTB/Blue-White-Illustration-Website-Launch-Plan-Presentation-(1).png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+
+/* Thống nhất phông chữ tiêu đề và nút bấm */
+.space-course-wrapper h1,
+.space-course-wrapper h2,
+.space-course-wrapper h3,
+.space-course-wrapper h4,
+.space-course-wrapper h5,
+.space-course-wrapper h6,
+.panel-heading, 
+.roadmap-title, 
+.step-title-text, 
+.moodle-title, 
+.kahoot-title, 
+.h5p-header-title,
+.gradebook-kids-header h4,
+.kids-task-name {
+    font-family: 'Gluten', cursive;
+    font-weight: 700;
+}
+
+.space-course-wrapper button,
+.fullscreen-btn,
+.game-btn, 
+.sweet-btn, 
+.back-btn-space, 
+.expand-btn-space, 
+.moodle-btn, 
+.kids-step-btn,
+.btn-back-to-map,
+.scratch-close-btn,
+.moodle-close-btn {
+    font-family: 'Gluten', cursive;
+    font-weight: 700;
+}
+
+.fullscreen-btn {
+    position: absolute; 
+    top: 3%; 
+    left: 3%; 
+    z-index: 999; 
+    background: #ef4444; 
+    color: white; 
+    border: 2px solid #fff; 
+    padding: 5px 12px; 
+    border-radius: 15px; 
+    cursor: pointer; 
+    font-family: 'Gluten', cursive; 
+    font-size: 11px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.fullscreen-btn:hover {
+    transform: scale(1.05);
+    background: #dc2626;
+}
+
+input.tab-controller {
+    display: none;
+}
+
+.img-btn {
+    position: absolute;
+    z-index: 30;
+    width: 13%;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.img-btn img {
+    width: 100%;
+    display: block;
+}
+
+.img-btn:hover {
+    transform: scale(1.08);
+}
+
+.btn-1 { top: 29%; left: 9%; }
+.btn-2 { top: 39%; left: 9%; }
+.btn-3 { top: 49%; left: 9%; }
+.btn-4 { top: 59%; left: 9%; }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes popUp {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes popUpCentered {
+    from { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
+    to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
