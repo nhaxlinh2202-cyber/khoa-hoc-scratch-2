@@ -59,24 +59,32 @@
 .welcome-banner {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(4px);
-    border-radius: 16px;
-    padding: 15px 20px;
-    gap: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1.5px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 20px 24px;
+    gap: 24px;
     animation: fadeIn 0.6s ease;
 }
 
 .banner-avatar {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     flex-shrink: 0;
 }
 .banner-avatar img {
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 75%;
     object-fit: contain;
 }
 
@@ -93,8 +101,6 @@
 }
 
 .welcome-text {
-    font-family: sans-serif;
-    font-size: 14.5px;
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
     line-height: 1.6;
@@ -110,16 +116,18 @@
 
 .info-card {
     flex: 1;
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(4px);
-    border-radius: 16px;
-    padding: 18px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1.5px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    gap: 15px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes fadeIn {
@@ -133,9 +141,10 @@
 }
 
 .info-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(255, 222, 89, 0.4);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+    border-color: rgba(255, 222, 89, 0.5);
+    box-shadow: 0 12px 30px rgba(255, 222, 89, 0.15);
+    background: rgba(255, 255, 255, 0.09);
 }
 
 .card-header {
@@ -168,42 +177,47 @@
 .values-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 14px;
 }
 
 .value-item {
     display: flex;
-    flex-direction: column;
-    gap: 4px;
+    align-items: center;
+    gap: 12px;
 }
 
 .value-badge {
-    align-self: flex-start;
-    padding: 3px 10px;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: bold;
+    align-self: center;
+    padding: 4px 14px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 950;
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+    font-family: 'Nunito', sans-serif;
+    flex-shrink: 0;
+    min-width: 85px;
+    text-align: center;
 }
 
 .badge-orange {
-    background: linear-gradient(135deg, #f97316, #ea580c);
+    background: linear-gradient(135deg, #ff7849, #ff5216);
 }
 .badge-blue {
-    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
 }
 .badge-green {
-    background: linear-gradient(135deg, #22c55e, #16a34a);
+    background: linear-gradient(135deg, #22c55e, #15803d);
 }
 
 .value-text {
     font-family: 'Nunito', sans-serif;
-    font-size: 12.5px;
-    line-height: 1.4;
-    color: #cbd5e1;
-    padding-left: 5px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #e2e8f0;
+    padding-left: 0;
 }
 
 /* ==========================================================
