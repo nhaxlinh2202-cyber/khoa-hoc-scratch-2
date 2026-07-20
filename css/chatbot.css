@@ -71,10 +71,10 @@
 ========================================================= */
 .ai-chat-frame {
     position: absolute;
-    bottom: 145px;
-    right: 10px;
-    width: 340px;
-    height: 460px;
+    bottom: 100px;
+    right: 0px;
+    width: 360px;
+    height: 520px;
     background: rgba(255, 255, 255, 0.95) !important;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
