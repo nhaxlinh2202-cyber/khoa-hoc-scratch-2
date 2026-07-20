@@ -36,10 +36,10 @@ html, body {
 =========================================== */
 .cosmic-rocket-container {
     position: absolute;
-    top: 0%;
-    left: -2.5%;
-    width: 36%;
-    height: 100%;
+    top: 5%;
+    left: -0.5%;
+    width: 32%;
+    height: 90%;
     z-index: 5;
     pointer-events: none;
     display: flex;
@@ -51,7 +51,7 @@ html, body {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    transform: scale(1.45); /* Phóng to hơn để thân tên lửa đủ to chứa trọn các nút bấm */
+    transform: scale(1.15); /* Phóng to vừa phải để các nút bấm nằm trọn trong thân tên lửa mới */
 }
 
 /* ==========================================
