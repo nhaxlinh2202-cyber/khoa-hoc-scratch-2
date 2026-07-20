@@ -7,9 +7,11 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-color: #080a15;
-    background-image: radial-gradient(circle at center, #15182e 0%, #080a15 100%);
+    background-image: url('../cosmic_space_background.png');
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
+    background-color: #080a15;
 }
 
 /* ==========================================
@@ -21,14 +23,83 @@ html, body {
     max-width: 1200px;
     aspect-ratio: 16 / 9;
     margin: 20px auto;
-    background-image: url('https://i.postimg.cc/BZPGssTB/Blue-White-Illustration-Website-Launch-Plan-Presentation-(1).png');
-    background-size: cover;
-    background-position: center;
+    background: transparent;
     border-radius: 20px;
     overflow: hidden;
     font-family: 'Nunito', sans-serif;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
+}
+
+/* ==========================================
+       1a. TÊN LỬA TÁCH BIỆT (SEPARATED ROCKET ELEMENT)
+=========================================== */
+.cosmic-rocket-container {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    width: 25%;
+    height: 90%;
+    z-index: 5;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cosmic-rocket-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    mix-blend-mode: screen;
+}
+
+/* ==========================================
+       1b. TIÊU ĐỀ CHÍNH GIAO DIỆN (MAIN INTERFACE TITLE)
+=========================================== */
+.main-cosmic-title-box {
+    position: absolute;
+    top: 4%;
+    left: 32%;
+    width: 64%;
+    text-align: center;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    pointer-events: none;
+}
+
+.main-title-top {
+    margin: 0;
+    font-family: 'Gluten', cursive;
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffde59;
+    text-shadow: 
+        -3px -3px 0 #000,  
+         3px -3px 0 #000,
+        -3px  3px 0 #000,
+         3px  3px 0 #000,
+         0 4px 10px rgba(255, 222, 89, 0.4);
+    letter-spacing: 3px;
+    line-height: 1.1;
+}
+
+.main-title-bottom {
+    margin: 0;
+    font-family: 'Gluten', cursive;
+    font-size: 20px;
+    font-weight: 700;
+    color: #4ade80;
+    text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000,
+         0 4px 8px rgba(74, 222, 128, 0.4);
+    letter-spacing: 2px;
+    line-height: 1.1;
 }
 
 /* Thống nhất phông chữ tiêu đề và nút bấm */
