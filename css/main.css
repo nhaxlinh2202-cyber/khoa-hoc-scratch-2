@@ -120,33 +120,32 @@
     font-weight: 700;
 }
 
-.fullscreen-btn {
+.fullscreen-btn-img {
     position: absolute; 
     top: 9.5%; 
     left: 15.5%; 
     transform: translateX(-50%);
     z-index: 999; 
-    background: linear-gradient(to bottom, #ff6b6b 0%, #e81a1a 100%);
-    color: white; 
-    border: 2px solid #fff; 
-    padding: 4px 12px; 
-    border-radius: 15px; 
+    width: 14%; /* Kích thước vừa khít trong chóp đầu tên lửa */
     cursor: pointer; 
-    font-family: 'Gluten', cursive; 
-    font-size: 10px;
-    font-weight: 700;
-    box-shadow: 0 4px 0 #b31010, 0 6px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.1s ease, background 0.1s ease;
+    transition: transform 0.15s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.fullscreen-btn:hover {
+.fullscreen-btn-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.fullscreen-btn-img:hover {
     transform: translateX(-50%) scale(1.05);
-    background: linear-gradient(to bottom, #ff7b7b 0%, #f92a2a 100%);
 }
 
-.fullscreen-btn:active {
-    transform: translateX(-50%) translateY(2px);
-    box-shadow: 0 2px 0 #b31010, 0 4px 6px rgba(0, 0, 0, 0.3);
+.fullscreen-btn-img:active {
+    transform: translateX(-50%) scale(0.95);
 }
 
 input.tab-controller {
