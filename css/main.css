@@ -60,13 +60,13 @@
     font-family: 'Nunito', sans-serif;
     font-size: 30px;
     font-weight: 950;
-    color: #ffd93d;
+    color: #ffd93d; /* Màu vàng nắng mặt trời rực rỡ */
     text-transform: uppercase;
     letter-spacing: 3px;
     line-height: 1.2;
-    -webkit-text-stroke: 6px #000; /* Đường viền vector đen dày dặn sắc nét */
-    paint-order: stroke fill;       /* Đắp màu vàng đè lên viền đen để không bị bóp nghẹt chữ */
-    text-shadow: 0 5px 15px rgba(255, 217, 61, 0.45);
+    -webkit-text-stroke: 6px #111111; /* Viền đen vector tránh bị đảo ngược thành màu trắng */
+    paint-order: stroke fill;
+    text-shadow: 0 5px 15px rgba(255, 217, 61, 0.4);
 }
 
 .main-title-bottom {
@@ -74,13 +74,13 @@
     font-family: 'Nunito', sans-serif;
     font-size: 19px;
     font-weight: 900;
-    color: #4eedff;
+    color: #ffffff; /* Đổi màu chữ dưới sang trắng tinh để hài hòa, dịu mắt và cực kỳ cao cấp */
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 1.2;
-    -webkit-text-stroke: 5px #000; /* Đường viền vector đen sắc nét */
-    paint-order: stroke fill;       /* Đắp màu xanh đè lên viền đen */
-    text-shadow: 0 4px 12px rgba(78, 237, 255, 0.45);
+    -webkit-text-stroke: 5px #111111; /* Viền đen vector tránh bị đảo ngược thành màu trắng */
+    paint-order: stroke fill;
+    text-shadow: 0 4px 12px rgba(255, 255, 255, 0.25);
 }
 
 

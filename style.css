@@ -3,7 +3,7 @@
  * All stylesheets are split into modular files inside the /css folder.
  */
 
-@import url('css/main.css');
+@import url('css/main.css?v=1.3');
 @import url('css/panels.css');
 @import url('css/missions.css');
 @import url('css/popups.css');
