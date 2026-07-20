@@ -86,6 +86,17 @@
     line-height: 1.1;
 }
 
+/* ==========================================
+       1c. TOÀN MÀN HÌNH NỀN VŨ TRỤ (FULLSCREEN BACKGROUND)
+=========================================== */
+.space-course-wrapper:fullscreen,
+.space-course-wrapper:-webkit-full-screen,
+.space-course-wrapper:-ms-fullscreen {
+    background-image: url('../cosmic_space_background.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
 /* Thống nhất phông chữ tiêu đề và nút bấm */
 .space-course-wrapper h1,
 .space-course-wrapper h2,

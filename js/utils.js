@@ -81,18 +81,8 @@ function toggleFullScreen() {
     }
 }
 
-/**
- * Cập nhật nội dung text của nút bấm toàn màn hình chính
- */
 function updateFullscreenButtonText(isFS) {
-    const btn = document.getElementById('mainFullscreenBtn');
-    if (btn) {
-        if (isFS) {
-            btn.innerHTML = "📺 THU NHỎ MÀN HÌNH (EXIT FULL SCREEN)";
-        } else {
-            btn.innerHTML = "📺 TOÀN MÀN HÌNH (FULL SCREEN)";
-        }
-    }
+    // Không thay đổi nội dung vì đang dùng nút bấm dạng hình ảnh 3D bubble tĩnh
 }
 
 /**
