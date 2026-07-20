@@ -1,23 +1,29 @@
 /* ==========================================
-       HỆ THỐNG TRẠM LÝ THUYẾT: KAHOOT (NHIỆM VỤ 3)
+       HỆ THỐNG TRẠM LÝ THUYẾT: QUIZ (NHIỆM VỤ 3)
 =========================================== */
 
 function goToTheoryMission() {
     const popup = document.getElementById('theoryLocalPopup');
     if (popup) popup.style.display = 'flex';
     
+    const iframe = document.getElementById('kahootIframe');
+    if (iframe) {
+        iframe.src = "https://wayground.com/embed/quiz/6a5dad25202a05be4b1258b3";
+    }
+    
     if (typeof toggleChatbotVisibility === 'function') {
         toggleChatbotVisibility(false);
     }
 }
 
-function openKahootInNewTab() {
-    window.open("https://kahoot.it/challenge/06310845", "_blank");
-}
-
 function closeLocalTheory() {
     const popup = document.getElementById('theoryLocalPopup');
     if (popup) popup.style.display = 'none';
+    
+    const iframe = document.getElementById('kahootIframe');
+    if (iframe) {
+        iframe.src = "";
+    }
     
     if (typeof toggleChatbotVisibility === 'function') {
         toggleChatbotVisibility(true);
@@ -36,12 +42,17 @@ function finishAllTheory() {
     const popup = document.getElementById('theoryLocalPopup');
     if (popup) popup.style.display = 'none';
     
+    const iframe = document.getElementById('kahootIframe');
+    if (iframe) {
+        iframe.src = "";
+    }
+    
     if (typeof toggleChatbotVisibility === 'function') {
         toggleChatbotVisibility(true);
     }
     
     if (typeof showCustomAlert === 'function') {
-        showCustomAlert("🎉 Siêu đỉnh luôn! Con đã vượt qua Đấu trường lý thuyết Kahoot rồi. Nhiệm vụ số 4 cuối cùng đã sẵn sàng!");
+        showCustomAlert("🎉 Siêu đỉnh luôn! Con đã vượt qua Đấu trường lý thuyết rồi. Nhiệm vụ số 4 cuối cùng đã sẵn sàng!");
     }
     checkAndRestoreFullscreen();
 }
