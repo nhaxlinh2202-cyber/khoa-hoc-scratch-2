@@ -10,7 +10,7 @@
     aspect-ratio: 16 / 9;
     margin: 20px auto;
     background: transparent;
-    overflow: hidden;
+    overflow: visible; /* Cho phép các phần của tên lửa nhô ra ngoài không bị xén */
     font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
 }
