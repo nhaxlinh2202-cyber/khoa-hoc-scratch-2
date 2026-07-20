@@ -51,7 +51,7 @@ function updateCardUI(stepNum, isUnlocked, isCompleted) {
 
     if (isCompleted) {
         card.classList.add('is-completed');
-        btn.innerHTML = "✅ Đã xong";
+        btn.innerHTML = "Đã xong";
         btn.style.background = "#22c55e";
         btn.style.boxShadow = "0 3px 0 #16a34a";
         btn.disabled = false;
