@@ -13,7 +13,7 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-image: url('cosmic_space_background.png');
+    background-image: url('images/cosmic_space_background.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -21,13 +21,13 @@ html, body {
 }
 
 .space-course-wrapper:fullscreen {
-    background: url('cosmic_space_background.png') no-repeat center center / cover !important;
+    background: url('images/cosmic_space_background.png') no-repeat center center / cover !important;
 }
 
 .space-course-wrapper:-webkit-full-screen {
-    background: url('cosmic_space_background.png') no-repeat center center / cover !important;
+    background: url('images/cosmic_space_background.png') no-repeat center center / cover !important;
 }
 
 .space-course-wrapper:-ms-fullscreen {
-    background: url('cosmic_space_background.png') no-repeat center center / cover !important;
+    background: url('images/cosmic_space_background.png') no-repeat center center / cover !important;
 }
