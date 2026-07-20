@@ -10,10 +10,8 @@
     aspect-ratio: 16 / 9;
     margin: 20px auto;
     background: transparent;
-    border-radius: 20px;
     overflow: hidden;
     font-family: 'Nunito', sans-serif;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
 }
 
