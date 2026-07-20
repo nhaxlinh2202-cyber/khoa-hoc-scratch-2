@@ -19,3 +19,11 @@ html, body {
     background-attachment: fixed;
     background-color: #080a15;
 }
+
+.space-course-wrapper:fullscreen,
+.space-course-wrapper:-webkit-full-screen,
+.space-course-wrapper:-ms-fullscreen {
+    background-image: url('cosmic_space_background.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
