@@ -40,31 +40,70 @@
             background: url('cosmic_space_background.png') no-repeat center center / cover !important;
         }
         .cosmic-footer {
-            margin-top: 40px !important;
-            padding: 20px 0 !important;
-            text-align: center !important;
-            width: 100% !important;
+            max-width: 1200px !important;
+            margin: 40px auto 30px auto !important;
+            padding: 20px 30px !important;
+            background: rgba(15, 23, 42, 0.45) !important; /* Hộp kính sẫm mờ ảo tinh tế */
+            backdrop-filter: blur(8px) !important;
+            -webkit-backdrop-filter: blur(8px) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            border-radius: 16px !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
             z-index: 10 !important;
             position: relative !important;
-            margin-bottom: 30px !important;
+            box-sizing: border-box !important;
         }
-        .footer-line-1 {
+        .footer-left {
+            text-align: left !important;
+        }
+        .footer-right {
+            text-align: right !important;
+        }
+        .footer-brand {
             margin: 0 0 4px 0 !important;
             font-family: 'Nunito', sans-serif !important;
-            font-size: 13.5px !important;
-            font-weight: 700 !important;
-            color: #e2e8f0 !important;
+            font-size: 14px !important;
+            font-weight: 800 !important;
+            color: #ffd93d !important; /* Điểm nhấn vàng gold cao cấp */
             letter-spacing: 0.5px !important;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
         }
-        .footer-line-2, .footer-line-3, .footer-line-4 {
-            margin: 2px 0 !important;
+        .footer-project {
+            margin: 0 !important;
             font-family: 'Nunito', sans-serif !important;
-            font-size: 11.5px !important;
+            font-size: 12.5px !important;
+            font-weight: 600 !important;
+            color: #e2e8f0 !important;
+            letter-spacing: 0.3px !important;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+        }
+        .footer-people {
+            margin: 3px 0 !important;
+            font-family: 'Nunito', sans-serif !important;
+            font-size: 12.5px !important;
             font-weight: 500 !important;
             color: #94a3b8 !important;
             letter-spacing: 0.3px !important;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+        }
+        .footer-people strong {
+            color: #f1f5f9 !important;
+            font-weight: 700 !important;
+        }
+        @media (max-width: 768px) {
+            .cosmic-footer {
+                flex-direction: column !important;
+                gap: 15px !important;
+                text-align: center !important;
+                padding: 20px !important;
+                margin-left: 20px !important;
+                margin-right: 20px !important;
+            }
+            .footer-left, .footer-right {
+                text-align: center !important;
+            }
         }
     </style>
 </head>
@@ -404,10 +443,14 @@
 
     <!-- Bản quyền Học viện -->
     <footer class="cosmic-footer">
-        <p class="footer-line-1">© 2026 Khóa học lập trình Scratch</p>
-        <p class="footer-line-2">Dự án học phần Giáo Dục Số</p>
-        <p class="footer-line-3">Thành viên nhóm thực hiện: Lê Nguyễn Nhã Linh - Phạm Thị Thu</p>
-        <p class="footer-line-4">Giảng viên hướng dẫn: Vũ Đình Minh</p>
+        <div class="footer-left">
+            <p class="footer-brand">© 2026 Khóa học lập trình Scratch</p>
+            <p class="footer-project">Dự án học phần Giáo Dục Số</p>
+        </div>
+        <div class="footer-right">
+            <p class="footer-people">Thành viên nhóm thực hiện: <strong>Lê Nguyễn Nhã Linh - Phạm Thị Thu</strong></p>
+            <p class="footer-people">Giảng viên hướng dẫn: <strong>Vũ Đình Minh</strong></p>
+        </div>
     </footer>
 
     <!-- Configuration & Utilities -->
