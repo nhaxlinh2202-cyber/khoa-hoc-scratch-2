@@ -785,21 +785,41 @@
                     <div class="gradebook-kids-header">
                         <img src="https://media.giphy.com/media/icIr8rk03xQI6NS67S/giphy.gif" alt="Rocket Trophy" class="gradebook-badge-avatar">
                         <h4>SỔ ĐIỂM CHIẾN BINH NHÍ</h4>
-                        <p>Điểm số nhiệm vụ lập trình thực tế của bé</p>
+                        <p>Bảng vàng thành tích học tập lập trình của bé</p>
                     </div>
 
-                    <div class="gradebook-kids-card">
-                        <div class="kids-card-accent"></div>
-                        <div class="kids-card-main-info">
-                            <span class="kids-task-label">BÀI TẬP HIỆN TẠI:</span>
-                            <h3 class="kids-task-name">Bài 1: Các câu lệnh cơ bản trong Scratch (Phần 1)</h3>
-                            <div id="kidsStatusBadge" class="kids-status-badge info-waiting">Đang chờ nộp bài</div>
+                    <!-- Bảng Thống Kê Tổng Quan -->
+                    <div class="gradebook-stats-grid">
+                        <div class="gradebook-stat-card">
+                            <span class="stat-label">TIẾN TRÌNH</span>
+                            <div class="stat-value-row">
+                                <span id="gradebookProgress">0%</span>
+                            </div>
+                            <div class="stat-progress-bar-bg">
+                                <div id="gradebookProgressFill" class="stat-progress-bar-fill" style="width: 0%;"></div>
+                            </div>
+                            <span class="stat-sub">Đã hoàn thành</span>
                         </div>
-                        <div class="kids-card-score-zone">
-                            <div class="star-deco">★</div>
-                            <div id="kidsGradeDisplay" class="kids-grade-num">--</div>
-                            <div class="score-max-cap">trên 100đ</div>
+                        <div class="gradebook-stat-card">
+                            <span class="stat-label">ĐIỂM TRUNG BÌNH</span>
+                            <div class="stat-value-row">
+                                <span id="gradebookAverage">--</span>
+                            </div>
+                            <span class="stat-sub">Trung bình hệ 100</span>
                         </div>
+                        <div class="gradebook-stat-card">
+                            <span class="stat-label">CẤP ĐỘ CHIẾN BINH</span>
+                            <div class="stat-value-row">
+                                <span id="gradebookRank" class="rank-badge-txt">Học Viên Mới</span>
+                            </div>
+                            <span class="stat-sub">Danh hiệu vũ trụ</span>
+                        </div>
+                    </div>
+
+                    <!-- Chi Tiết Từng Bài Học -->
+                    <div class="gradebook-lessons-title">CHI TIẾT ĐIỂM SỐ NHIỆM VỤ</div>
+                    <div id="gradebookLessonsList" class="gradebook-lessons-list">
+                        <!-- Sẽ được chèn động từ JavaScript -->
                     </div>
 
                     <div class="gradebook-kids-footer">
