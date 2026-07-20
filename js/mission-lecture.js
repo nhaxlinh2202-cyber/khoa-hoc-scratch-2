@@ -66,6 +66,18 @@ function closeH5PMission() {
     checkAndRestoreFullscreen();
 }
 
+function finishH5PMission() {
+    localStorage.setItem('scratch_b1_s2', 'done');
+    localStorage.setItem('score_b1_s2', '100');
+    if (typeof checkAndRenderSteps === 'function') {
+        checkAndRenderSteps();
+    }
+    if (typeof showCustomAlert === 'function') {
+        showCustomAlert("🎉 Chúc mừng chiến binh vũ trụ! Con đã xem xong video bài giảng. Hãy tiếp tục khám phá trạm Lý Thuyết Kahoot nhé!");
+    }
+    closeH5PMission();
+}
+
 function expandH5P() {
     const popup = document.getElementById('h5pLocalPopup');
     if (!popup) return;
