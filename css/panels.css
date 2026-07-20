@@ -56,78 +56,146 @@
     border-radius: 10px;
 }
 
-.welcome-banner {
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1.5px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-radius: 20px;
-    padding: 20px 24px;
-    gap: 24px;
-    animation: fadeIn 0.6s ease;
-}
-
-.banner-avatar {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    flex-shrink: 0;
-}
-.banner-avatar img {
-    width: 75%;
-    height: 75%;
-    object-fit: contain;
-}
-
-.banner-text {
-    flex-grow: 1;
-}
-
-.panel-heading {
-    font-size: 22px; 
-    color: #ffde59;
-    margin: 0 0 6px 0;
-    font-family: 'Gluten', cursive;
-    font-weight: 700;
-}
-
-.welcome-text {
-    font-family: 'Nunito', sans-serif;
-    font-size: 15px;
-    line-height: 1.6;
-    color: #f8fafc;
-    margin: 0;
-}
-
-.info-grid {
+/* Course Info Grid (2 Columns Layout) */
+.course-info-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
+    grid-template-columns: 4.5fr 5.5fr;
+    gap: 15px;
+    height: 100%;
+    box-sizing: border-box;
 }
 
-.info-card {
-    flex: 1;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1.5px solid rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-radius: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+.course-preview-card {
+    background: rgba(255, 255, 255, 0.06); 
+    border: 1.5px solid rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(8px); 
+    border-radius: 20px; 
+    padding: 15px 18px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    gap: 10px; 
+    justify-content: center; 
+    box-sizing: border-box; 
+    height: 100%;
+}
+
+.preview-img-box {
+    width: 90%; 
+    aspect-ratio: 4 / 3; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden; 
+    border-radius: 12px; 
+    border: 1px solid rgba(255,255,255,0.15); 
+    background: rgba(0,0,0,0.2); 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.preview-img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+.preview-title {
+    font-size: 16px; 
+    color: #ffde59; 
+    margin: 0; 
+    font-family: 'Gluten', cursive;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.preview-desc {
+    font-size: 12.5px; 
+    color: #cbd5e1; 
+    margin: 0; 
+    font-family: 'Nunito', sans-serif; 
+    line-height: 1.45;
+}
+
+.course-values-card {
+    background: rgba(255, 255, 255, 0.06); 
+    border: 1.5px solid rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(8px); 
+    border-radius: 20px; 
+    padding: 18px 20px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 12px; 
+    justify-content: center; 
+    box-sizing: border-box; 
+    height: 100%;
+}
+
+.values-title {
+    font-size: 16px; 
+    color: #ffde59; 
+    margin: 0; 
+    font-family: 'Gluten', cursive; 
+    margin-bottom: 5px; 
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.values-list-modern {
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.value-item-modern {
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    background: rgba(0,0,0,0.15); 
+    padding: 8px 12px; 
+    border-radius: 12px; 
+    border: 1px solid rgba(255,255,255,0.05); 
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.value-item-modern:hover {
+    transform: translateX(3px); 
+    border-color: rgba(255, 222, 89, 0.25);
+}
+
+.value-badge-pill {
+    padding: 4px 12px; 
+    border-radius: 20px; 
+    font-size: 10px; 
+    font-weight: bold; 
+    color: white; 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3); 
+    letter-spacing: 0.5px; 
+    font-family: 'Nunito', sans-serif; 
+    flex-shrink: 0; 
+    min-width: 75px; 
+    text-align: center;
+}
+
+.value-info-box {
+    display: flex; 
+    flex-direction: column; 
+    gap: 2px; 
+    min-width: 0;
+}
+.value-info-box h5 {
+    margin: 0; 
+    font-size: 13px; 
+    color: #ffde59; 
+    font-weight: 700; 
+    font-family: 'Nunito', sans-serif;
+}
+.value-info-box p {
+    margin: 0; 
+    font-size: 11.5px; 
+    color: #cbd5e1; 
+    font-family: 'Nunito', sans-serif; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
 }
 
 @keyframes fadeIn {
@@ -140,68 +208,6 @@
     50% { transform: scale(1.05); }
 }
 
-.info-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(255, 222, 89, 0.5);
-    box-shadow: 0 12px 30px rgba(255, 222, 89, 0.15);
-    background: rgba(255, 255, 255, 0.09);
-}
-
-.card-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.card-icon {
-    font-size: 24px;
-}
-
-.card-header h4 {
-    margin: 0;
-    font-size: 16px;
-    color: #ffde59;
-    font-family: 'Gluten', cursive;
-    font-weight: 700;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-}
-
-.card-body {
-    margin: 0;
-    font-family: 'Nunito', sans-serif;
-    font-size: 13.5px;
-    line-height: 1.55;
-    color: #e2e8f0;
-}
-
-.values-list {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
-.value-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.value-badge {
-    align-self: center;
-    padding: 4px 14px;
-    border-radius: 30px;
-    font-size: 10px;
-    font-weight: 950;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-    letter-spacing: 1px;
-    font-family: 'Nunito', sans-serif;
-    flex-shrink: 0;
-    min-width: 85px;
-    text-align: center;
-}
-
 .badge-orange {
     background: linear-gradient(135deg, #ff7849, #ff5216);
 }
@@ -210,14 +216,6 @@
 }
 .badge-green {
     background: linear-gradient(135deg, #22c55e, #15803d);
-}
-
-.value-text {
-    font-family: 'Nunito', sans-serif;
-    font-size: 13px;
-    line-height: 1.5;
-    color: #e2e8f0;
-    padding-left: 0;
 }
 
 /* ==========================================================
