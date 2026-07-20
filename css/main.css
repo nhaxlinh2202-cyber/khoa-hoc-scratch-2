@@ -196,7 +196,7 @@ input.tab-controller {
     width: 100%;
     text-align: center;
     padding: 15px 0;
-    margin-top: 10px;
+    margin-top: auto; /* Đẩy chân trang xuống đáy cùng màn hình */
     margin-bottom: 25px;
     z-index: 10;
     position: relative;
